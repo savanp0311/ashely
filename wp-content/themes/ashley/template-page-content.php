@@ -32,6 +32,18 @@ if ( $page_content ) {
 
             include locate_template("Templates/sections/about.php");
 
+        // Services Section Layout
+
+        } elseif ( $layout === 'services_section' ) {
+            $heading = $row['heading'];
+            $description = $row['description'];
+            $descriptiontwo = $row['descriptiontwo'];
+            $image    = $row['image'];
+            $sub_heading    = $row['sub_heading'];
+            $about_image    = $row['about_image'];
+
+            include locate_template("Templates/sections/services.php");
+
         // Fallback if no matching layout file
         } else {
             echo "<!-- Layout not found: {$layout} -->";
