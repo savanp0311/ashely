@@ -35,12 +35,12 @@ if ( $page_content ) {
         // Services Section Layout
 
         } elseif ( $layout === 'services_section' ) {
-            $heading = $row['heading'];
-            $description = $row['description'];
-            $descriptiontwo = $row['descriptiontwo'];
-            $image    = $row['image'];
-            $sub_heading    = $row['sub_heading'];
-            $about_image    = $row['about_image'];
+            $services_subtitle = $row['services_subtitle'];
+            $teamimage = $row['teamimage'];
+            $servicesheadingone = $row['servicesheadingone'];
+            $servicesheadingtwo    = $row['servicesheadingtwo'];
+            $whatwedobutton    = $row['whatwedobutton'];
+            $servicesbox = $row['servicesbox'];
 
             include locate_template("Templates/sections/services.php");
 

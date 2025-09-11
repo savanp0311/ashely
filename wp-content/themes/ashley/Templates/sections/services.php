@@ -9,20 +9,22 @@
                             <div class="mil-mb-120">
                                 <div class="row">
                                     <div class="col-lg-10">
-                                        <span class="mil-suptitle mil-light-soft mil-suptitle-right mil-up">Professionals focused on helping your brand<br> grow and move forward.</span>
+                                        <span class="mil-suptitle mil-light-soft mil-suptitle-right mil-up"><?php echo $services_subtitle; ?></span>
                                     </div>
                                 </div>
 
                                 <div class="mil-complex-text justify-content-center mil-up mil-mb-15">
-
-                                    <span class="mil-text-image"><img src="img/photo/2.jpg" alt="team"></span>
-                                    <h2 class="mil-h1 mil-muted mil-center">Unique <span class="mil-thin">Ideas</span></h2>
+                                    <span class="mil-text-image">
+                                        <?php if (!empty($teamimage)) : ?>
+                                        <img src="<?php echo esc_url($teamimage['url']); ?>" alt="team"></span>
+                                        <?php endif ?>
+                                    <h2 class="mil-h1 mil-muted mil-center"><?php echo $servicesheadingone; ?></h2>
 
                                 </div>
                                 <div class="mil-complex-text justify-content-center mil-up">
 
-                                    <h2 class="mil-h1 mil-muted mil-center">For Your <span class="mil-thin">Business.</span></h2>
-                                    <a href="services.html" class="mil-services-button mil-button mil-arrow-place"><span>What we do</span></a>
+                                    <h2 class="mil-h1 mil-muted mil-center"><?php echo $servicesheadingtwo; ?></h2>
+                                    <a href="<?php echo $whatwedobutton['url']; ?>" class="mil-services-button mil-button mil-arrow-place"><span><?php echo $whatwedobutton['title']; ?></span></a>
 
                                 </div>
                             </div>
